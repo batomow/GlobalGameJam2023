@@ -1,0 +1,72 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=5
+
+_global_script_classes=[{
+"base": "RefCounted",
+"class": &"BinaryTree",
+"language": &"GDScript",
+"path": "res://Scripts/Classes/BinaryTree.gd"
+}, {
+"base": "RefCounted",
+"class": &"BinaryTreeNode",
+"language": &"GDScript",
+"path": "res://Scripts/Classes/BinaryTreeNode.gd"
+}, {
+"base": "RefCounted",
+"class": &"Hook",
+"language": &"GDScript",
+"path": "res://Scripts/Classes/Hook.gd"
+}, {
+"base": "Hook",
+"class": &"SaveHook",
+"language": &"GDScript",
+"path": "res://Scripts/Hooks/SaveHook.gd"
+}, {
+"base": "RefCounted",
+"class": &"SaveService",
+"language": &"GDScript",
+"path": "res://Scripts/Services/SaveService.gd"
+}, {
+"base": "RefCounted",
+"class": &"State",
+"language": &"GDScript",
+"path": "res://Scripts/Classes/State.gd"
+}, {
+"base": "Node",
+"class": &"StateMachine",
+"language": &"GDScript",
+"path": "res://Scripts/Classes/StateMachine.gd"
+}, {
+"base": "RefCounted",
+"class": &"Utils",
+"language": &"GDScript",
+"path": "res://Scripts/Classes/Utils.gd"
+}]
+_global_script_class_icons={
+"BinaryTree": "",
+"BinaryTreeNode": "",
+"Hook": "",
+"SaveHook": "",
+"SaveService": "",
+"State": "",
+"StateMachine": "",
+"Utils": ""
+}
+
+[application]
+
+config/name="Global Game Jam 2023"
+run/main_scene="res://Scenes/Main.tscn"
+config/features=PackedStringArray("4.0", "GL Compatibility")
+config/icon="res://icon.svg"
+
+[rendering]
+
+renderer/rendering_method="gl_compatibility"
